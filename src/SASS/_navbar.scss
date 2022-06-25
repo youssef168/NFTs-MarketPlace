@@ -1,0 +1,26 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    
+        
+
+        .center {
+            ul {
+                display: flex;
+                list-style: none;
+                align-items: center;
+                margin-bottom: 0 !important;
+
+                li {
+                    margin-right: 12px;
+                    color: $pinkColor;
+                    font-size: 19px;
+                    font-weight: normal;
+                    // font-style: italic;
+                    cursor: pointer;
+                }
+            }
+        }
+}

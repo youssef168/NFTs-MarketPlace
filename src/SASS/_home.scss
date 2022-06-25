@@ -1,0 +1,54 @@
+.hero {
+    margin-top: 110px;
+
+    .text {
+        h2 {
+            color: #fff;
+            text-align: start;
+            font-size: 3rem;
+            line-height: 57px;
+            letter-spacing: 1px;
+            
+            span {
+                background: linear-gradient(-45deg, #e250e5, #4b50e6, #e250e5, #4b50e6);
+                /* background-size: 100% 100%; */
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-stroke: 3px transparent;
+                -webkit-text-fill-color: #14141f;
+                margin-bottom: 0;
+            }
+        }
+
+        h5 {
+            color: #888;
+            margin: 10px 0 10px 0;
+            text-align: start;
+            line-height: 31px;
+            letter-spacing: 1px;
+            font-size: 19px;
+        }
+    }
+}
+
+.img-cover {
+    width: 100%;
+    margin: auto;
+        img {
+            border-radius: 30px;
+        }
+}
+
+@media (max-width: 768px) {
+    .img-cover {
+        margin-top: 22px !important;
+    }
+}
+
+.auction-bar {
+    h4 {
+        font-size: 24px;
+        font-weight: 600;
+        font-style: italic;
+    }
+}

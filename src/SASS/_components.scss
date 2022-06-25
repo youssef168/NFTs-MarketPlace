@@ -1,0 +1,346 @@
+.black-btn {
+    padding: 7px 25px;
+    border-radius: 30px !important;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #4b50e6;
+    /* border-image: linear-gradient(to right, #e250e5, #4b50e6, #e250e5, #4b50e6); */
+    /* -webkit-background-clip: text; */
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 300;
+
+    svg {
+        margin-right: 11px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sm-center {
+        margin: auto;
+    }
+}
+
+.text-decorated-underline {
+    position: relative;
+    cursor: pointer;
+    &::after {
+        content: '';
+        background-color: #e250e5;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        z-index: -1;
+        border-radius: 7px;
+        transition: .5s;
+    }
+
+    &:hover {
+        &::after {
+            height: 100%;
+        }
+    }
+}
+
+.nft-card {
+    background-color: #343444;
+    padding: 17px;
+    border-radius: 7px;
+
+    .img {
+        margin-bottom: 13px;
+            img {
+                border-radius: 7px !important;
+            }
+    }
+
+    .nft-card-body {
+        .nft-card-title {
+            text-align: start;
+            margin-top: 18px;
+
+            h4 {
+                font-size: 1.1rem;
+                letter-spacing: 1.5px;
+            }
+        }
+        
+    
+        .nft-card-info {
+            margin-bottom: 15px;
+            margin-top: 15px;
+                .nft-creator {
+                    width: 62%;
+    
+                        .nft-card-img {
+                            width: 27%;
+                        }
+                        .nft-creator-info {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            margin-left: 8px;
+
+                                h6 {
+                                    color: #999;
+                                    font-size: 13px;
+                                    letter-spacing: 1px;
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                    letter-spacing: 1px;
+                                    font-style: italic;
+                                }
+                        }
+
+                    }
+                    .nft-price {
+                        text-align: left;
+                        h6 {
+                            font-size: 12px;
+                            color: #999;
+                            margin-bottom: 1px;
+                        }
+
+                        h5 {
+                            font-size: 16px;
+                            font-weight: bold;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+                .nft-paid {
+                   
+
+                    h6 {
+                        color: #999;
+                        font-size: 15px;
+                        cursor: pointer;
+                    }
+                }
+    }
+}
+
+@media (min-width: 1201px) {
+    .nft-creator-info {
+        p {
+            font-size: 13px !important;
+        }
+    }
+}
+
+.saller-card {
+    display: flex;
+    align-items: center;
+
+    .saller-img {
+        width: 30%;
+
+    }
+
+    .saller-info {
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        margin-left: 11px;
+
+        h5 {
+            font-size: .9rem;
+            font-weight: 500;
+            font-style: italic;
+            letter-spacing: 1.5px;
+        }
+
+        h6 {
+            font-size: 15px;
+            letter-spacing: .8px;
+            font-weight: 300;
+        }
+    }
+}
+
+.step-card {
+    background-color: #343444;
+    padding: 22px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+        .step-icon {
+            background-color: #4B50E6;
+            padding: 12px 17px;
+            border-radius: 5px;
+
+                svg {
+                    font-size: 25px;
+                }
+        }
+
+        .step-body {
+            margin-top: 17px;
+
+                .step-head {
+                    display: flex;
+                    margin-bottom: 4px;
+
+                    h3 {
+                        font-size: 1.25rem;
+                        font-weight: 600;
+                        font-style: italic;
+                        letter-spacing: 1px;
+                    }
+                }
+
+                .step-content {
+
+                    h5 {
+                        font-size: 1rem;
+                        text-align: start;
+                        line-height: 23px;
+                        color: #c5c5c5;
+                    }
+                }
+        }
+}
+
+.modal-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #1918187d;
+    // transition: .5s;
+
+    .inner-modal {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        background-color: #343444;
+        padding: 25px;
+        transform: translate(-50%, -50%);
+        border-radius: 6px;
+        width: 485px;
+        height: 485px;
+
+
+        .close-modal {
+            position: absolute;
+            top: -9px;
+            right: 0;
+            background-color: #4b50e6;
+            width: 28px;
+            border-radius: 102px;
+            padding: 3px;
+            cursor: pointer;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: -4px;
+                left: -19%;
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+                background-color: #5f63e8ba;
+                z-index: -1;
+                padding: 19px;
+            }
+        }
+
+        .inner-head {
+            margin-bottom: 41px;
+
+            h3 {
+                font-size: 22px;
+                letter-spacing: 3px;
+                font-weight: bold;
+            }
+
+            h6 {
+                color: #ffffffc9;
+            }
+        }
+
+        .inner-body {
+            .input-body {
+                .label {
+                    display: flex;
+                    margin: 10px 0 6px 0;
+                    font-size: 15px;
+                    letter-spacing: 1px;
+                    font-style: italic;
+                }
+
+
+                input {
+                    width: 100%;
+                    border-radius: 7px;
+                    padding: 10px 15px;
+                    background-color: transparent;
+                    border: 1px solid #99999954;
+                    outline: none;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.prime-color {
+        padding: 5px 16px;
+        border-radius: 30px;
+        border: 1px solid $smoothBlue;
+        background-color: $smoothBlue;
+        color: #fff;
+        transition: .5s;
+
+
+        svg {
+            margin-right: 8px;
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: $smoothBlue;
+        }
+}
+
+.history {
+    color: #999;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.logo {
+    background: linear-gradient(-45deg,#e250e5,#4b50e6,#e250e5,#4b50e6);
+    /* background-size: 100% 100%; */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    -webkit-text-fill-color: #14141f;
+    margin-bottom: 0;
+
+    h2 {
+        display: flex;
+        
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+
+footer {
+    padding: 60px;
+}
+
+.p-head {
+    text-align: start;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color: #999;
+}

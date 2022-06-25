@@ -1,0 +1,34 @@
+// Global Colors
+$mainColor: #14141F;
+$pinkColor: #e250e5;
+$smoothBlue: #4b50e6;
+$smoothGray: #343444;
+$blackColor: #000000;
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+    background-color: $mainColor !important;
+    color: #fff !important;
+}
+
+
+.section {
+    margin-top: 70px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: $smoothGray;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background-image: linear-gradient(to top, $pinkColor, $pinkColor, $smoothBlue);
+}
